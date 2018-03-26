@@ -1,3 +1,5 @@
 # JavaChallenges
 
-# In this repo are some java challenges i've completed
+# In this repo:
+  # some java challenges i've completed
+  # Some exercises
