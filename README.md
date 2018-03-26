@@ -1,3 +1,3 @@
 # JavaChallenges
 
-# Here are some java challenges i've completed
+# In this repo are some java challenges i've completed
