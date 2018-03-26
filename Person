@@ -4,6 +4,7 @@ public class Person {
 
     public int age;
     public String name;
+    public ArrayList<Account> accounts;
 
 
     public Person(int initialAge, String name) {
@@ -16,12 +17,18 @@ public class Person {
         }
 
         this.name = name;
+        this.accounts = new ArrayList<Account>();
+    }
+
+    public void addAccount(Account account) {
+        accounts.add(account);
     }
 
     public Person(){
         //default constructor
         this.age=20;
         this.name="JohnDoe";
+        this.accounts = new ArrayList<Account>();
     }
 
     public int yearsPasses() {
@@ -73,5 +80,10 @@ public class Person {
         kiddy.setAge(18);
         System.out.println("kid's age is: "+kiddy.getAge());
         System.out.println(kiddy.toString());
+
+        Account account = new Account("0");
+        noOtherLikeMe.addAccount(account);
+        account.deposit(100);
+        System.out.println("after deposit, we have this amount in the account: "+account.getBalanceAsCents());
     }
 }
