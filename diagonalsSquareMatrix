@@ -9,7 +9,7 @@ public class Solution {
     /*
      * Complete the aVeryBigSum function below.
      */
-    static long diagonalsSquareMatrix(int n, long[] ar) {
+    static long aVeryBigSum(int n, long[] ar) {
         /*
          * Write your code here.
          */
