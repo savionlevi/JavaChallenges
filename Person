@@ -1,3 +1,5 @@
+//Basic object, get/set , toString, create new objects
+
 public class Person {
 
     public int age;
