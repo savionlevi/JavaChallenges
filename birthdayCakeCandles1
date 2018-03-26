@@ -6,13 +6,8 @@ import java.util.regex.*;
 
 public class birthdayCakeCandles1 {
 
-    /*
-     * Complete the birthdayCakeCandles function below.
-     */
+
     public static int birthdayCakeCandles(int n, int[] ar) {
-        /*
-         * Write your code here.
-         */
         
         int max = 0;
         int i;
