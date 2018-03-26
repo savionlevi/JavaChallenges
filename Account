@@ -1,0 +1,21 @@
+        // Account object that will be also used in Person class
+        
+        public class Account {
+            private String accountID;
+            private int balanceAsCents;
+
+            public Account(String accountID) {
+                this.accountID = accountID;
+                this.balanceAsCents = 0;
+            }
+
+            public void deposit(int sum) {
+                this.balanceAsCents += sum;
+            }
+
+            public int getBalanceAsCents() {
+                return this.balanceAsCents;
+            }
+
+            
+        }
