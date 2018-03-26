@@ -1,0 +1,30 @@
+// Exercise for object with an ArrayList
+
+public class Menu {
+
+    private ArrayList<String> meals;
+
+    public Menu(){
+        this.meals = new ArrayList<String>();
+    }
+
+    public void addMeal(String meal) {
+        meals.add(meal);
+
+    }
+
+    public void printMeals(){
+        for(String meal : meals) {
+            System.out.println(meal);
+        }
+    }
+
+    public static void main(String[] args) {
+        Menu McShonalds = new Menu();
+        McShonalds.addMeal("Pizza");
+        McShonalds.addMeal("Hamburger");
+        McShonalds.addMeal("Fish'n'Chips");
+        McShonalds.printMeals();
+    }
+
+}
