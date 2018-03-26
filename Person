@@ -1,0 +1,75 @@
+public class Person {
+
+    public int age;
+    public String name;
+
+
+    public Person(int initialAge, String name) {
+        if(initialAge>0) {
+            this.age = initialAge;
+        }
+        else {
+            this.age=0;
+            System.out.println("Age is not valid, setting age to 0.");
+        }
+
+        this.name = name;
+    }
+
+    public Person(){
+        //default constructor
+        this.age=20;
+        this.name="JohnDoe";
+    }
+
+    public int yearsPasses() {
+        return age++;
+    }
+
+    public void amIOld() {
+        if(age < 13) {
+            System.out.println("You are young.");
+        }
+        else if((age>=13) && (age<18)) {
+            System.out.println("You are a teenager.");
+        }
+        else {
+            System.out.println("You are old.");
+        }
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
+    public void setAge(int age){
+        this.age=age;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public void setName(String name){
+        this.name=name;
+    }
+
+    public String toString(){
+        return "age: "+getAge()+",name: "+getName();
+
+    }
+
+    public static void main(String[] args) {
+        Person johnnyDoe = new Person();
+        Person noOtherLikeMe = new Person(30,"MaxPayne");
+        noOtherLikeMe.amIOld();
+        johnnyDoe.amIOld();
+        Person kiddy = new Person(10,"scriptKiddy");
+        kiddy.amIOld();
+
+        System.out.println("kid's age is: "+kiddy.getAge());
+        kiddy.setAge(18);
+        System.out.println("kid's age is: "+kiddy.getAge());
+        System.out.println(kiddy.toString());
+    }
+}
