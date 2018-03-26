@@ -1,4 +1,6 @@
-//Basic object, get/set , toString, create new objects
+//Person object, implemented get/set , toString, create new objects. 
+// Person have ArrayList (containing Account object).
+
 
 public class Person {
 
