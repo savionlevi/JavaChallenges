@@ -4,16 +4,15 @@ import java.text.*;
 import java.util.*;
 import java.util.regex.*;
 
+// Read an array of integers from the user.
+// return the percent of : Zeroes , positive and negative integers out of the total number of integers
+
+
 public class Solution {
 
-    /*
-     * Complete the plusMinus function below.
-     */
+
     public static void plusMinus(int[] arr, int n) {
-        /*
-         * Write your code here.
-         */
-        
+
         float numOfPositive = 0;
         float numOfNegative = 0;
         float numOfZeros = 0;
@@ -34,8 +33,7 @@ public class Solution {
             
         }
         
-        
-        
+
         float pos = numOfPositive/n;
         float neg = numOfNegative/n;
         float zero = numOfZeros/n;
