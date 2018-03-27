@@ -23,6 +23,8 @@ public class Bus extends Vehicle{
 
     public static void main(String[] args) {
         ArrayList<Person> passengers = new ArrayList<Person>();
+        Person passengerX = new Person();
+        passengers.add(passengerX);
         Bus schoolBus = new Bus("school bus regular driver",1,10,passengers);
     }
 }
