@@ -29,7 +29,7 @@ harry=12299933
  */
 
 public class Solution{
-    public static void main(String []argh){
+    public static void main(String []args){
         Map<String,Integer> phoneBook = new HashMap<String, Integer>();
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
