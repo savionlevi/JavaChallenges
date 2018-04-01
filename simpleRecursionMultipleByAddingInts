@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+
+
+
+public class Solution{
+
+    public static int nTimesK(int n, int k) {
+        System.out.println("n: " + n);
+
+        if(n>1) {
+            return k + nTimesK(n - 1 , k);
+        }
+        else {
+            return k;
+        }
+    }
+
+    public static void main(String []args){
+        int result = nTimesK(4,1);
+        System.out.println("Result: " + result);
+
+    }
+}
