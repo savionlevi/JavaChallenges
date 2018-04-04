@@ -1,5 +1,5 @@
 #hierarchy
 
-#Person (superClass)
-#|
-#Student (subClass)
+# Person (superClass)
+# |
+# Student (subClass)
