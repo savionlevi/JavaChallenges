@@ -1,8 +1,8 @@
 # inheritence project
 #superclass / subclasses hierarchy
 
-#BMW
+# BMW
 # |
-#Car  Bus
+# Car  Bus
 #  |   |
-#vehicle
+# vehicle
